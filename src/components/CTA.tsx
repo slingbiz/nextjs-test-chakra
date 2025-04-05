@@ -1,41 +1,39 @@
-import { Link as ChakraLink, Button } from "@chakra-ui/react";
+import React from 'react';
+import { Box, Flex, Heading, Text, Button } from '@chakra-ui/react';
 
-import { Container } from "./Container";
+const CTA = () => {
+  return (
+    <Box bg="primary.500" py={16} px={8}>
+      <Flex
+        direction={{ base: 'column', md: 'row' }}
+        justify="space-between"
+        align="center"
+        wrap="wrap"
+      >
+        <Box mb={{ base: 8, md: 0 }}>
+          <Heading as="h2" size="2xl" color="white" mb={4}>
+            Ready to Get Started?
+          </Heading>
+          <Text color="gray.200" fontSize="lg">
+            Join our community and discover the latest and greatest apps.
+          </Text>
+        </Box>
+        <Box>
+          <Button
+            colorScheme="white"
+            color="primary.500"
+            borderRadius="8px"
+            py="4"
+            px="6"
+            lineHeight="1"
+            size="lg"
+          >
+            Download Now
+          </Button>
+        </Box>
+      </Flex>
+    </Box>
+  );
+};
 
-export const CTA = () => (
-  <Container
-    flexDirection="row"
-    position="fixed"
-    bottom={0}
-    width="full"
-    maxWidth="3xl"
-    py={3}
-  >
-    <Button
-      as={ChakraLink}
-      isExternal
-      href="https://chakra-ui.com"
-      variant="outline"
-      colorScheme="green"
-      rounded="button"
-      flexGrow={1}
-      mx={2}
-      width="full"
-    >
-      chakra-ui
-    </Button>
-    <Button
-      as={ChakraLink}
-      isExternal
-      href="https://github.com/vercel/next.js/blob/canary/examples/with-chakra-ui"
-      variant="solid"
-      colorScheme="green"
-      rounded="button"
-      flexGrow={3}
-      mx={2}
-      width="full"
-    >
-      View Repo
-    </Button>
-  </Container>
-);
+export default CTA;

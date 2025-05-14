@@ -14,7 +14,7 @@ export const CTA = () => (
     <Button
       as={ChakraLink}
       isExternal
-      href="https://chakra-ui.com"
+      href="https://baloon.dev.com"
       variant="outline"
       colorScheme="green"
       rounded="button"
@@ -22,12 +22,12 @@ export const CTA = () => (
       mx={2}
       width="full"
     >
-      chakra-ui
+      Explore Baloon
     </Button>
     <Button
       as={ChakraLink}
       isExternal
-      href="https://github.com/vercel/next.js/blob/canary/examples/with-chakra-ui"
+      href="https://github.com/slingbiz/nextjs-test-chakra"
       variant="solid"
       colorScheme="green"
       rounded="button"
@@ -35,7 +35,7 @@ export const CTA = () => (
       mx={2}
       width="full"
     >
-      View Repo
+      Setup your Repo
     </Button>
   </Container>
 );

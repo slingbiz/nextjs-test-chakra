@@ -20,7 +20,7 @@ const Index = () => (
     <Hero />
     <Main>
       <Text color="text">
-        Example repository of <Code>Next.js</Code> + <Code>chakra-ui</Code> +{" "}
+        Live demo project using Baloon.dev - edit UI and code instantly.{" "}
         <Code>TypeScript</Code>.
       </Text>
 
@@ -29,17 +29,17 @@ const Index = () => (
           <ListIcon as={CheckCircleIcon} color="green.500" />
           <ChakraLink
             isExternal
-            href="https://chakra-ui.com"
+            href="https://baloon.dev"
             flexGrow={1}
             mr={2}
           >
-            Chakra UI <LinkIcon />
+            Editable with Baloon <LinkIcon />
           </ChakraLink>
         </ListItem>
         <ListItem>
           <ListIcon as={CheckCircleIcon} color="green.500" />
-          <ChakraLink isExternal href="https://nextjs.org" flexGrow={1} mr={2}>
-            Next.js <LinkIcon />
+          <ChakraLink isExternal href="https://baloon.dev" flexGrow={1} mr={2}>
+            Preview-ready instantly ✅ <LinkIcon />
           </ChakraLink>
         </ListItem>
       </List>
@@ -47,7 +47,7 @@ const Index = () => (
 
     <DarkModeSwitch />
     <Footer>
-      <Text>Next ❤️ Chakra</Text>
+      <Text>Baloon ❤️ Your Code</Text>
     </Footer>
     <CTA />
   </Container>

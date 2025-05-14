@@ -20,7 +20,7 @@ const Index = () => (
     <Hero />
     <Main>
       <Text color="text">
-        Live demo project using Baloon.dev - edit UI and code instantly.{" "}
+        This is a sample demo project in Baloon. You can setup your own project and make changes direclty.{" "}
         <Code>TypeScript</Code>.
       </Text>
 

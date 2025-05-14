@@ -21,7 +21,6 @@ const Index = () => (
     <Main>
       <Text color="text">
         This is a sample demo project in Baloon. You can setup your own project and make changes direclty.{" "}
-        <Code>TypeScript</Code>.
       </Text>
 
       <List spacing={3} my={0} color="text">
@@ -47,7 +46,7 @@ const Index = () => (
 
     <DarkModeSwitch />
     <Footer>
-      <Text>Baloon ❤️ Your Code</Text>
+      <Text>Your Code ❤️ Baloon</Text>
     </Footer>
     <CTA />
   </Container>

@@ -13,5 +13,5 @@ export const Hero = ({ title }: { title: string }) => (
 );
 
 Hero.defaultProps = {
-  title: "Try editing this live with Baloon",
+  title: "Playground on Baloon.dev",
 };

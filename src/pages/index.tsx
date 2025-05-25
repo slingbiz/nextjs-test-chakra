@@ -20,7 +20,7 @@ const Index = () => (
     <Hero />
     <Main>
       <Text color="text">
-        This is a sample demo project in Open AO. You can setup your own project and make changes direclty.{" "}
+        This is a sample demo project in Aus Open. You can setup your own project and make changes direclty.{" "}
       </Text>
 
       <List spacing={3} my={0} color="text">
@@ -28,16 +28,16 @@ const Index = () => (
           <ListIcon as={CheckCircleIcon} color="green.500" />
           <ChakraLink
             isExternal
-            href="https://Open AO"
+            href="https://Aus Open"
             flexGrow={1}
             mr={2}
           >
-            Editable with Open AO <LinkIcon />
+            Editable with Aus Open <LinkIcon />
           </ChakraLink>
         </ListItem>
         <ListItem>
           <ListIcon as={CheckCircleIcon} color="green.500" />
-          <ChakraLink isExternal href="https://Open AO" flexGrow={1} mr={2}>
+          <ChakraLink isExternal href="https://Aus Open" flexGrow={1} mr={2}>
             Preview-ready instantly ✅ <LinkIcon />
           </ChakraLink>
         </ListItem>
@@ -46,7 +46,7 @@ const Index = () => (
 
     <DarkModeSwitch />
     <Footer>
-      <Text>Your Code ❤️ Open AO</Text>
+      <Text>Your Code ❤️ Aus Open</Text>
     </Footer>
     <CTA />
   </Container>

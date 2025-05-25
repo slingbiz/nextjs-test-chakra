@@ -14,7 +14,7 @@ export const CTA = () => (
     <Button
       as={ChakraLink}
       isExternal
-      href="https://baloon.dev"
+      href="https://Baloon AI"
       variant="outline"
       colorScheme="green"
       rounded="button"
@@ -22,7 +22,7 @@ export const CTA = () => (
       mx={2}
       width="full"
     >
-      Explore Baloon.dev
+      Explore Baloon AI
     </Button>
     <Button
       as={ChakraLink}

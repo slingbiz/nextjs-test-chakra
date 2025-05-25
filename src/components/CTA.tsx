@@ -22,7 +22,7 @@ export const CTA = () => (
       mx={2}
       width="full"
     >
-      Explore Baloon
+      Explore Baloon.dev
     </Button>
     <Button
       as={ChakraLink}

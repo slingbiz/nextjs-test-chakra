@@ -14,10 +14,12 @@ import { Main } from "../components/Main";
 import { DarkModeSwitch } from "../components/DarkModeSwitch";
 import { CTA } from "../components/CTA";
 import { Footer } from "../components/Footer";
+import AiTrendsBanner from "../components/AiTrendsBanner";
 
 const Index = () => (
   <Container height="100vh">
     <Hero />
+    <AiTrendsBanner />
     <Main>
       <Text color="text">
         This is a sample demo project in Aus Closed. You can setup your own project and make changes direclty.{" "}

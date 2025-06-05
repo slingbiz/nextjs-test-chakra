@@ -20,7 +20,7 @@ const Index = () => (
     <Hero />
     <Main>
       <Text color="text">
-        This is a sample demo project in Baloon. You can setup your own project and make changes direclty.{" "}
+        This is a sample demo project in <ChakraLink href="https://baloon.dev" isExternal>baloon.dev</ChakraLink>. You can setup your own project and make changes directly.{" "}
       </Text>
 
       <List spacing={3} my={0} color="text">
@@ -32,7 +32,7 @@ const Index = () => (
             flexGrow={1}
             mr={2}
           >
-            Editable with Baloon <LinkIcon />
+            Editable with <ChakraLink href="https://baloon.dev" isExternal>baloon.dev</ChakraLink> <LinkIcon />
           </ChakraLink>
         </ListItem>
         <ListItem>
@@ -46,7 +46,7 @@ const Index = () => (
 
     <DarkModeSwitch />
     <Footer>
-      <Text>Your Code ❤️ Baloon</Text>
+      <Text>Your Code ❤️ <ChakraLink href="https://baloon.dev" isExternal>baloon.dev</ChakraLink></Text>
     </Footer>
     <CTA />
   </Container>

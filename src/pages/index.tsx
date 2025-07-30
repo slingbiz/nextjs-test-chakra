@@ -5,24 +5,25 @@ import {
   List,
   ListIcon,
   ListItem,
-} from "@chakra-ui/react";
-import { CheckCircleIcon, LinkIcon } from "@chakra-ui/icons";
+  Box,
+} from '@chakra-ui/react'
+import { CheckCircleIcon, LinkIcon } from '@chakra-ui/icons'
 
-import { Hero } from "../components/Hero";
-import { Container } from "../components/Container";
-import { Main } from "../components/Main";
-import { DarkModeSwitch } from "../components/DarkModeSwitch";
-import { CTA } from "../components/CTA";
-import { Footer } from "../components/Footer";
-import HeroSection from "../components/HeroSection";
+import { HeroSection } from '../components/HeroSection'
+import { Container } from '../components/Container'
+import { Main } from '../components/Main'
+import { DarkModeSwitch } from '../components/DarkModeSwitch'
+import { CTA } from '../components/CTA'
+import { Footer } from '../components/Footer'
 
 const Index = () => (
-  <>
+  <Box>
     <HeroSection />
     <Container>
       <Main>
         <Text color="text">
-          This is a sample demo project in <ChakraLink href="https://baloon.dev" isExternal>baloon.dev</ChakraLink>. You can setup your own project and make changes directly.{" "}
+          Example repository of <Code>Next.js</Code> + <Code>chakra-ui</Code> +{' '}
+          <Code>TypeScript</Code>.
         </Text>
 
         <List spacing={3} my={0} color="text">
@@ -30,17 +31,28 @@ const Index = () => (
             <ListIcon as={CheckCircleIcon} color="green.500" />
             <ChakraLink
               isExternal
-              href="https://baloon.dev"
+              href="https://chakra-ui.com"
               flexGrow={1}
               mr={2}
             >
-              Editable with <ChakraLink href="https://baloon.dev" isExternal>baloon.dev</ChakraLink> <LinkIcon />
+              Chakra UI <LinkIcon />
             </ChakraLink>
           </ListItem>
           <ListItem>
             <ListIcon as={CheckCircleIcon} color="green.500" />
-            <ChakraLink isExternal href="https://baloon.dev" flexGrow={1} mr={2}>
-              Preview-ready instantly ✅ <LinkIcon />
+            <ChakraLink isExternal href="https://nextjs.org" flexGrow={1} mr={2}>
+              Next.js <LinkIcon />
+            </ChakraLink>
+          </ListItem>
+          <ListItem>
+            <ListIcon as={CheckCircleIcon} color="green.500" />
+            <ChakraLink
+              isExternal
+              href="https://www.typescriptlang.org"
+              flexGrow={1}
+              mr={2}
+            >
+              TypeScript <LinkIcon />
             </ChakraLink>
           </ListItem>
         </List>
@@ -48,11 +60,11 @@ const Index = () => (
 
       <DarkModeSwitch />
       <Footer>
-        <Text>Your Code ❤️ <ChakraLink href="https://baloon.dev" isExternal>baloon.dev</ChakraLink></Text>
+        <Text>Next ❤️ Chakra</Text>
       </Footer>
       <CTA />
     </Container>
-  </>
-);
+  </Box>
+)
 
-export default Index;
+export default Index

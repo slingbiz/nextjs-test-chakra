@@ -14,11 +14,11 @@ import { Main } from '../components/Main'
 import { DarkModeSwitch } from '../components/DarkModeSwitch'
 import { CTA } from '../components/CTA'
 import { Footer } from '../components/Footer'
-import { HeroBanner } from '../components/HeroBanner'
+import { HeroSection } from '../components/HeroSection'
 
 const Index = () => (
   <>
-    <HeroBanner />
+    <HeroSection />
     <Container height="100vh">
       <Hero />
       <Main>

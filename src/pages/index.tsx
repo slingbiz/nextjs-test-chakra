@@ -4,7 +4,7 @@ import {
   Code,
   List,
   ListIcon,
-  ListItem,
+import { HeroSection } from '../components/HeroSection'
 } from "@chakra-ui/react";
 import { CheckCircleIcon, LinkIcon } from "@chakra-ui/icons";
 
@@ -14,7 +14,7 @@ import { Main } from "../components/Main";
 import { DarkModeSwitch } from "../components/DarkModeSwitch";
 import { CTA } from "../components/CTA";
 import { Footer } from "../components/Footer";
-
+      <HeroSection />
 const Index = () => (
   <Container height="100vh">
     <Hero />

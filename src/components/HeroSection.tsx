@@ -4,15 +4,9 @@ import {
   Text,
   Button,
   Stack,
-  Container,
   useColorModeValue,
+  Container,
 } from '@chakra-ui/react'
-import { motion } from 'framer-motion'
-
-const MotionBox = motion(Box)
-const MotionHeading = motion(Heading)
-const MotionText = motion(Text)
-const MotionButton = motion(Button)
 
 export const HeroSection = () => {
   const textColor = useColorModeValue('white', 'white')
@@ -22,18 +16,17 @@ export const HeroSection = () => {
   )
 
   return (
-    <MotionBox
+    <Box
       position="relative"
+      height="100vh"
       width="100%"
-      height={{ base: '600px', md: '700px', lg: '800px' }}
-      backgroundImage="url('/images/thailand-beach-paradise.jpg')"
-      backgroundSize="cover"
+      overflow="hidden"
+      backgroundImage="url('/images/thailand-hero-banner.jpg')"
       backgroundPosition="center"
       backgroundRepeat="no-repeat"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.8 }}
+      backgroundSize="cover"
     >
+      {/* Overlay */}
       <Box
         position="absolute"
         top="0"
@@ -42,6 +35,8 @@ export const HeroSection = () => {
         bottom="0"
         background={overlayBg}
       />
+      
+      {/* Content */}
       <Container
         maxW="container.xl"
         height="100%"
@@ -53,70 +48,62 @@ export const HeroSection = () => {
         <Stack
           spacing={6}
           textAlign="center"
-          maxW={{ base: '90%', md: '80%', lg: '800px' }}
+          maxW="3xl"
+          mx="auto"
+          px={{ base: 4, md: 8 }}
         >
-          <MotionHeading
-            as="h1"
-            size={{ base: '2xl', md: '3xl', lg: '4xl' }}
-            color={textColor}
+          <Heading
+            fontSize={{ base: '3xl', md: '5xl', lg: '6xl' }}
             fontWeight="bold"
+            color={textColor}
             lineHeight="shorter"
-            initial={{ y: 20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.2, duration: 0.8 }}
           >
             Discover the Magic of Thailand
-          </MotionHeading>
-          <MotionText
+          </Heading>
+          
+          <Text
             fontSize={{ base: 'lg', md: 'xl', lg: '2xl' }}
             color={textColor}
-            maxW="700px"
+            maxW="2xl"
             mx="auto"
-            initial={{ y: 20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.4, duration: 0.8 }}
           >
-            From pristine beaches to ancient temples, experience the Land of Smiles
-            with unforgettable adventures and warm hospitality
-          </MotionText>
+            Experience pristine beaches, ancient temples, vibrant culture, and unforgettable adventures in the Land of Smiles
+          </Text>
+          
           <Stack
             direction={{ base: 'column', sm: 'row' }}
             spacing={4}
             justify="center"
             pt={4}
           >
-            <MotionButton
+            <Button
               size="lg"
               colorScheme="teal"
+              bg="teal.400"
+              _hover={{ bg: 'teal.500' }}
               px={8}
-              initial={{ scale: 0.9, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              transition={{ delay: 0.6, duration: 0.5 }}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+              fontSize={{ base: 'md', lg: 'lg' }}
             >
-              Explore Destinations
-            </MotionButton>
-            <MotionButton
+              Start Your Journey
+            </Button>
+            
+            <Button
               size="lg"
               variant="outline"
               color={textColor}
               borderColor={textColor}
-              px={8}
               _hover={{
                 bg: 'whiteAlpha.200',
+                borderColor: 'white',
               }}
-              initial={{ scale: 0.9, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              transition={{ delay: 0.7, duration: 0.5 }}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+              px={8}
+              fontSize={{ base: 'md', lg: 'lg' }}
             >
-              Plan Your Trip
-            </MotionButton>
+              Explore Destinations
+            </Button>
           </Stack>
         </Stack>
       </Container>
-    </MotionBox>
+    </Box>
   )
 }

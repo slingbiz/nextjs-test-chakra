@@ -5,6 +5,12 @@ import {
   List,
   ListIcon,
   ListItem,
+  Box,
+  FormControl,
+  FormLabel,
+  Input,
+  Textarea,
+  Button
 } from "@chakra-ui/react";
 import { CheckCircleIcon, LinkIcon } from "@chakra-ui/icons";
 
@@ -42,6 +48,26 @@ const Index = () => (
           </ChakraLink>
         </ListItem>
       </List>
+
+      <Box mt={8}>
+        <form>
+          <FormControl id="name">
+            <FormLabel>Name</FormLabel>
+            <Input type="text" />
+          </FormControl>
+          <FormControl id="email" mt={4}>
+            <FormLabel>Email</FormLabel>
+            <Input type="email" />
+          </FormControl>
+          <FormControl id="message" mt={4}>
+            <FormLabel>Message</FormLabel>
+            <Textarea />
+          </FormControl>
+          <Button mt={4} colorScheme="blue" type="submit">
+            Submit
+          </Button>
+        </form>
+      </Box>
     </Main>
 
     <DarkModeSwitch />

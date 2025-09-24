@@ -6,12 +6,10 @@ import {
   Stack,
   useColorModeValue,
   Container,
-  Icon,
-  HStack,
-  VStack,
+  Flex,
 } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
-import { ArrowForwardIcon, CalendarIcon } from '@chakra-ui/icons'
+import { ArrowForwardIcon } from '@chakra-ui/icons'
 
 const MotionBox = motion(Box)
 const MotionHeading = motion(Heading)
@@ -20,160 +18,181 @@ const MotionButton = motion(Button)
 
 export const AICodersSummitHero = () => {
   const bgGradient = useColorModeValue(
-    'linear(to-r, blackAlpha.600, blackAlpha.800)',
-    'linear(to-r, blackAlpha.700, blackAlpha.900)'
+    'linear(to-br, blackAlpha.600, blackAlpha.800)',
+    'linear(to-br, blackAlpha.700, blackAlpha.900)'
   )
   const textColor = useColorModeValue('white', 'white')
-  const buttonBg = useColorModeValue('teal.400', 'teal.500')
-  const buttonHoverBg = useColorModeValue('teal.500', 'teal.600')
-  const secondaryButtonBg = useColorModeValue('whiteAlpha.200', 'whiteAlpha.300')
-  const secondaryButtonHoverBg = useColorModeValue('whiteAlpha.300', 'whiteAlpha.400')
+  const primaryButtonBg = useColorModeValue('purple.500', 'purple.400')
+  const primaryButtonHover = useColorModeValue('purple.600', 'purple.500')
+  const secondaryButtonBorder = useColorModeValue('white', 'white')
 
   return (
     <Box
       position="relative"
-      height={{ base: '100vh', md: '90vh' }}
-      width="100%"
+      minH="100vh"
+      display="flex"
+      alignItems="center"
       overflow="hidden"
     >
       {/* Background Image */}
       <Box
         position="absolute"
-      top="0"
-        left="0"
-        right="0"
-        bottom="0"
+        top={0}
+        left={0}
+        right={0}
+        bottom={0}
         backgroundImage="url('/images/ai-summit-hero-bg.jpg')"
         backgroundSize="cover"
         backgroundPosition="center"
         backgroundRepeat="no-repeat"
-        filter="brightness(0.8)"
+        zIndex={-2}
       />
       
       {/* Gradient Overlay */}
       <Box
         position="absolute"
-        top="0"
-        left="0"
-        right="0"
-        bottom="0"
+        top={0}
+        left={0}
+        right={0}
+        bottom={0}
         bgGradient={bgGradient}
+        zIndex={-1}
       />
-      
+
       {/* Content */}
-      <Container
-        maxW="container.xl"
-        height="100%"
-        position="relative"
-        display="flex"
-        alignItems="center"
-        justifyContent="center"
-      >
-        <VStack
-          spacing={8}
+      <Container maxW="7xl" position="relative" zIndex={1}>
+        <Flex
+          direction="column"
           align="center"
           textAlign="center"
-          maxW="4xl"
+          py={{ base: 20, md: 28 }}
           px={{ base: 4, md: 8 }}
         >
           <MotionBox
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.5 }}
           >
-            <HStack spacing={2} justify="center" mb={4}>
-              <Icon as={CalendarIcon} color={textColor} />
-              <Text color={textColor} fontSize="lg" fontWeight="medium">
-                March 15-17, 2024 • Bangkok, Thailand
-              </Text>
-            </HStack>
+            <Text
+              fontSize={{ base: 'lg', md: 'xl' }}
+              color={textColor}
+              fontWeight="semibold"
+              mb={4}
+              textTransform="uppercase"
+              letterSpacing="wide"
+            >
+              November 15-17, 2024 • Virtual Event
+            </Text>
           </MotionBox>
-          
+
           <MotionHeading
             as="h1"
             size={{ base: '2xl', md: '3xl', lg: '4xl' }}
             fontWeight="bold"
             color={textColor}
-            lineHeight="shorter"
+            mb={6}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
           >
             AI Coders Summit 2024
           </MotionHeading>
-          
+
           <MotionText
             fontSize={{ base: 'xl', md: '2xl' }}
             color={textColor}
+            mb={8}
             maxW="3xl"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
           >
             Join the world's leading developers and AI experts for three days of
             cutting-edge insights, hands-on workshops, and networking opportunities
-            that will transform your approach to AI-powered development.
+            that will transform your coding journey.
           </MotionText>
-          
+
           <Stack
             direction={{ base: 'column', sm: 'row' }}
             spacing={4}
-            pt={4}
-            width={{ base: '100%', sm: 'auto' }}
+            w={{ base: 'full', sm: 'auto' }}
           >
             <MotionButton
               size="lg"
-              bg={buttonBg}
+              bg={primaryButtonBg}
               color="white"
-              _hover={{ bg: buttonHoverBg, transform: 'translateY(-2px)' }}
-              _active={{ transform: 'translateY(0)' }}
+              _hover={{ bg: primaryButtonHover }}
               rightIcon={<ArrowForwardIcon />}
               px={8}
               py={6}
               fontSize="lg"
-              fontWeight="bold"
-              boxShadow="lg"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.4, delay: 0.6 }}
+              transition={{ duration: 0.3, delay: 0.3 }}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               Register Now
             </MotionButton>
-            
+
             <MotionButton
               size="lg"
-              bg={secondaryButtonBg}
+              variant="outline"
               color={textColor}
-              _hover={{ bg: secondaryButtonHoverBg, transform: 'translateY(-2px)' }}
-              _active={{ transform: 'translateY(0)' }}
+              borderColor={secondaryButtonBorder}
+              _hover={{ bg: 'whiteAlpha.200' }}
               px={8}
               py={6}
               fontSize="lg"
-              fontWeight="medium"
-              backdropFilter="blur(10px)"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.4, delay: 0.8 }}
+              transition={{ duration: 0.3, delay: 0.4 }}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Learn More
+              View Agenda
             </MotionButton>
           </Stack>
-          
+
+          {/* Stats or Additional Info */}
           <MotionBox
+            mt={12}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: 1 }}
-            pt={8}
+            transition={{ duration: 0.5, delay: 0.5 }}
           >
-            <Text color={textColor} fontSize="md" opacity={0.9}>
-              Limited Early Bird Tickets Available
-            </Text>
+            <Stack
+              direction={{ base: 'column', md: 'row' }}
+              spacing={{ base: 4, md: 8 }}
+              align="center"
+            >
+              <Box textAlign="center">
+                <Text fontSize="3xl" fontWeight="bold" color={textColor}>
+                  50+
+                </Text>
+                <Text fontSize="sm" color={textColor} opacity={0.8}>
+                  Expert Speakers
+                </Text>
+              </Box>
+              <Box textAlign="center">
+                <Text fontSize="3xl" fontWeight="bold" color={textColor}>
+                  100+
+                </Text>
+                <Text fontSize="sm" color={textColor} opacity={0.8}>
+                  Technical Sessions
+                </Text>
+              </Box>
+              <Box textAlign="center">
+                <Text fontSize="3xl" fontWeight="bold" color={textColor}>
+                  5000+
+                </Text>
+                <Text fontSize="sm" color={textColor} opacity={0.8}>
+                  Global Attendees
+                </Text>
+              </Box>
+            </Stack>
           </MotionBox>
-        </VStack>
+        </Flex>
       </Container>
     </Box>
   )

@@ -8,19 +8,17 @@ import {
 } from '@chakra-ui/react'
 import { CheckCircleIcon, LinkIcon } from '@chakra-ui/icons'
 
-import { Hero } from '../components/Hero'
+import { AICodersSummitHero } from '../components/AICodersSummitHero'
 import { Container } from '../components/Container'
 import { Main } from '../components/Main'
 import { DarkModeSwitch } from '../components/DarkModeSwitch'
 import { CTA } from '../components/CTA'
 import { Footer } from '../components/Footer'
-import { AICodersSummitHero } from '../components/AICodersSummitHero'
 
 const Index = () => (
   <>
     <AICodersSummitHero />
     <Container height="100vh">
-      <Hero />
       <Main>
         <Text color="text">
           Example repository of <Code>Next.js</Code> + <Code>chakra-ui</Code> +{' '}

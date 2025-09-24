@@ -1,4 +1,4 @@
-import { Flex, Heading } from "@chakra-ui/react";
+import { Flex, Heading, Link as ChakraLink } from "@chakra-ui/react";
 
 export const Hero = ({ title }: { title: string }) => (
   <Flex
@@ -13,5 +13,9 @@ export const Hero = ({ title }: { title: string }) => (
 );
 
 Hero.defaultProps = {
-  title: "Playground on Baloon.dev",
+  title: (
+    <>
+      Playground on <ChakraLink href="https://baloon.dev" isExternal>baloon.dev</ChakraLink>
+    </>
+  ),
 };

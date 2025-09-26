@@ -24,6 +24,14 @@ const theme = extendTheme({
         default: "#FF0080",
         _dark: "#fbec8f",
       },
+      aiGradientStart: {
+        default: "#667eea",
+        _dark: "#764ba2",
+      },
+      aiGradientEnd: {
+        default: "#764ba2",
+        _dark: "#667eea",
+      },
     },
     radii: {
       button: "12px",

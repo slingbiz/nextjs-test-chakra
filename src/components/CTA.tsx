@@ -14,28 +14,28 @@ export const CTA = () => (
     <Button
       as={ChakraLink}
       isExternal
-      href="https://baloon.dev.com"
+      href="https://baloon.dev"
       variant="outline"
-      colorScheme="green"
+      colorScheme="purple"
       rounded="button"
       flexGrow={1}
       mx={2}
       width="full"
     >
-      Explore Baloon
+      Join Summit
     </Button>
     <Button
       as={ChakraLink}
       isExternal
       href="https://github.com/slingbiz/nextjs-test-chakra"
       variant="solid"
-      colorScheme="green"
+      colorScheme="purple"
       rounded="button"
       flexGrow={3}
       mx={2}
       width="full"
     >
-      Setup your Repo
+      Explore Code
     </Button>
   </Container>
 );

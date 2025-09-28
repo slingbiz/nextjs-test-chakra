@@ -1,5 +1,7 @@
 # Example React App with [chakra-ui](https://github.com/chakra-ui/chakra-ui) and TypeScript
 
+baloon.dev
+
 This repository is a **sample project for [Baloon.dev](https://baloon.dev)**.
 The goal is to demonstrate how you can use Baloon with a real front-end repository to create Jira issues, make relevant code changes, and preview updates seamlessly.
 

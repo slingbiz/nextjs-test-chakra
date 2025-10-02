@@ -17,12 +17,12 @@ const theme = extendTheme({
         _dark: "#ade3b8",
       },
       heroGradientStart: {
-        default: "#7928CA",
-        _dark: "#e3a7f9",
+        default: "#FF6B00",  // Thailand-inspired orange
+        _dark: "#FF9E00",
       },
       heroGradientEnd: {
-        default: "#FF0080",
-        _dark: "#fbec8f",
+        default: "#009688",  // Thailand-inspired teal
+        _dark: "#00BCD4",
       },
     },
     radii: {
@@ -31,6 +31,13 @@ const theme = extendTheme({
   },
   colors: {
     black: "#16161D",
+    thailand: {
+      orange: "#FF6B00",
+      gold: "#FFD700",
+      teal: "#009688",
+      lightTeal: "#00BCD4",
+      darkRed: "#C41E3A",
+    },
   },
   fonts,
   breakpoints,

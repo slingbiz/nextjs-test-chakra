@@ -16,11 +16,11 @@ import { CTA } from "../components/CTA";
 import { Footer } from "../components/Footer";
 
 const Index = () => (
-  <Container height="100vh">
+  <Container>
     <Hero />
     <Main>
       <Text color="text">
-        This is a sample demo project in Baloon. You can setup your own project and make changes direclty.{" "}
+        This is a sample demo project in Baloon. You can setup your own project and make changes directly.{" "}
       </Text>
 
       <List spacing={3} my={0} color="text">

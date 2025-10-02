@@ -1,0 +1,6 @@
+This is a test file for the Baloon.dev sample project.
+
+Project: nextjs-test-chakra
+Purpose: Demonstrating Baloon.dev's integration with Next.js + Chakra UI + TypeScript
+
+This file serves as a test artifact to validate file creation and tracking functionality.

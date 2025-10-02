@@ -1,0 +1,10 @@
+This is a test file - text2.txt
+
+This file is created for testing purposes as part of JIRA issue BD-40.
+
+Sample content for testing:
+- Line 1: Test data
+- Line 2: More test data
+- Line 3: Additional test content
+
+End of test file.

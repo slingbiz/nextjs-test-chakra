@@ -1,0 +1,12 @@
+This is a test file created for JIRA issue BD-40.
+
+This file demonstrates the Baloon.dev workflow for implementing changes based on Jira issues.
+
+Project: nextjs-test-chakra
+Issue Type: Story
+Priority: Medium
+
+Test content:
+- Line 1: Hello World
+- Line 2: Testing text file creation
+- Line 3: Baloon.dev integration test

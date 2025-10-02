@@ -1,0 +1,6 @@
+This is a test file created for BD-40.
+
+This file demonstrates how Baloon.dev can create and manage files in a repository through JIRA integration.
+
+Project: Baloon.dev - Next.js + Chakra UI + TypeScript Sample
+Created: 2025-10-02

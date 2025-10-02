@@ -1,0 +1,12 @@
+This is a test file - text2.txt
+
+This file has been created as part of JIRA issue BD-40.
+It serves as a test file for the nextjs-test-chakra repository.
+
+Test content:
+- Line 1: Testing basic text content
+- Line 2: Testing multi-line content
+- Line 3: Testing special characters: !@#$%^&*()
+- Line 4: Testing numbers: 1234567890
+
+End of test file.

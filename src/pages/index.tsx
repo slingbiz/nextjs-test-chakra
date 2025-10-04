@@ -9,6 +9,7 @@ import {
 import { CheckCircleIcon, LinkIcon } from "@chakra-ui/icons";
 
 import { Hero } from "../components/Hero";
+import { DubaiHeroBanner } from "../components/DubaiHeroBanner";
 import { Container } from "../components/Container";
 import { Main } from "../components/Main";
 import { DarkModeSwitch } from "../components/DarkModeSwitch";
@@ -17,7 +18,7 @@ import { Footer } from "../components/Footer";
 
 const Index = () => (
   <Container height="100vh">
-    <Hero />
+    <DubaiHeroBanner />
     <Main>
       <Text color="text">
         This is a sample demo project in Baloon. You can setup your own project and make changes direclty.{" "}

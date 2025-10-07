@@ -1,0 +1,16 @@
+This is a test file - text2.txt
+
+This file can be used for testing purposes such as:
+- File reading/writing operations
+- Text processing
+- Data parsing
+- Integration tests
+
+Sample content:
+Line 1: Hello World
+Line 2: Testing 123
+Line 3: Special characters: !@#$%^&*()
+Line 4: Numbers: 0123456789
+Line 5: Mixed: abc123XYZ
+
+End of test file.

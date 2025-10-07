@@ -1,0 +1,4 @@
+This is text2.txt - a test file for Baloon.dev
+Created as part of JIRA issue BD-40
+
+This file demonstrates how Baloon can create files based on Jira issues.

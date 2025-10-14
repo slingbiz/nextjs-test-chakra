@@ -38,3 +38,7 @@ Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&ut
 Chakra UI supports Gradients and RTL in `v1.1`. To enable RTL, [configure direction and swap](https://chakra-ui.com/docs/features/rtl-support).
 
 For RTL apps, make sure to set `<Html lang="ar" dir="rtl">` inside `_document.ts`.
+
+---
+
+baloon.dev

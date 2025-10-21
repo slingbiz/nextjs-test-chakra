@@ -1,0 +1,4 @@
+This is another test file.
+
+Test content for pp.txt
+Created for JIRA issue BD-55 (follow-up)

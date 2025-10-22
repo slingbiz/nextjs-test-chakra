@@ -1,0 +1,8 @@
+This is a test file (tt.txt) created as per JIRA issue BD-56.
+
+Test file contents:
+- Created for testing purposes
+- Part of the Baloon.dev project
+- Status: Test file ready
+
+Test timestamp: 2025-10-22

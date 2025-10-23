@@ -1,0 +1,5 @@
+BD-56 Task File - Mobile
+
+This file was created as part of the follow-up request for JIRA task BD-56.
+Reference: mobile.pk
+Project: Next.js (React) with TypeScript

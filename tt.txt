@@ -1,0 +1,7 @@
+Project Type Analysis for BD-56
+
+This is a Next.js (React) project, NOT an Angular project.
+
+Framework: Next.js
+Language: TypeScript
+UI Library: Chakra UI

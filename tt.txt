@@ -1,0 +1,9 @@
+This is a test file (tt.txt) created for JIRA issue BD-55.
+
+Test content:
+- Line 1: Test data
+- Line 2: Sample text
+- Line 3: Verification content
+
+Status: Active
+Created: 2025-10-24

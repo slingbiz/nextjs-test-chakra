@@ -24,6 +24,18 @@ const theme = extendTheme({
         default: "#FF0080",
         _dark: "#fbec8f",
       },
+      christmasRed: {
+        default: "#C41E3A",
+        _dark: "#C41E3A",
+      },
+      christmasGreen: {
+        default: "#0F6844",
+        _dark: "#0F6844",
+      },
+      christmasGold: {
+        default: "#FFD700",
+        _dark: "#FFD700",
+      },
     },
     radii: {
       button: "12px",

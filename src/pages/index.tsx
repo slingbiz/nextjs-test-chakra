@@ -1,7 +1,6 @@
 import {
   Link as ChakraLink,
   Text,
-  Code,
   List,
   ListIcon,
   ListItem,
@@ -13,6 +12,7 @@ import { Container } from "../components/Container";
 import { Main } from "../components/Main";
 import { DarkModeSwitch } from "../components/DarkModeSwitch";
 import { CTA } from "../components/CTA";
+import { ContactSection } from "../components/ContactSection";
 import { Footer } from "../components/Footer";
 
 const Index = () => (
@@ -26,12 +26,7 @@ const Index = () => (
       <List spacing={3} my={0} color="text">
         <ListItem>
           <ListIcon as={CheckCircleIcon} color="green.500" />
-          <ChakraLink
-            isExternal
-            href="https://baloon.dev"
-            flexGrow={1}
-            mr={2}
-          >
+          <ChakraLink isExternal href="https://baloon.dev" flexGrow={1} mr={2}>
             Editable with Baloon <LinkIcon />
           </ChakraLink>
         </ListItem>
@@ -43,11 +38,9 @@ const Index = () => (
         </ListItem>
       </List>
     </Main>
-
+    <ContactSection />
     <DarkModeSwitch />
-    <Footer>
-      <Text>Your Code ❤️ Baloon</Text>
-    </Footer>
+    <Footer />
     <CTA />
   </Container>
 );

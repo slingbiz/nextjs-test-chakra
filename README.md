@@ -9,7 +9,7 @@ We’re using a simple **Next.js + chakra-ui + TypeScript** app as the base proj
 
 ## Customizations
 
-- **BD-62:** Landing page hero now showcases the Dubai Tourism winter season with a full-bleed banner, CTAs, and highlight stats tailored for seasonal campaigns.
+- **BD-62:** Landing page hero now showcases the Dubai Tourism winter season with a full-bleed banner, highlight stats, a concierge contact section, and a refreshed footer aligned to the seasonal campaign.
 
 ## Deploy your own
 

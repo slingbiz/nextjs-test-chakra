@@ -38,3 +38,7 @@ Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&ut
 Chakra UI supports Gradients and RTL in `v1.1`. To enable RTL, [configure direction and swap](https://chakra-ui.com/docs/features/rtl-support).
 
 For RTL apps, make sure to set `<Html lang="ar" dir="rtl">` inside `_document.ts`.
+
+## Contact section
+
+The home page now ships with a responsive "Contact Us" form that collects a visitor's name, email, and message. The form uses Chakra UI components and provides instant feedback so teams can prototype a basic inquiry workflow without additional setup.

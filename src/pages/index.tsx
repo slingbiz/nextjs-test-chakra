@@ -1,11 +1,4 @@
-import {
-  Link as ChakraLink,
-  Text,
-  Code,
-  List,
-  ListIcon,
-  ListItem,
-} from "@chakra-ui/react";
+import { Link as ChakraLink, Text, List, ListIcon, ListItem } from "@chakra-ui/react";
 import { CheckCircleIcon, LinkIcon } from "@chakra-ui/icons";
 
 import { Hero } from "../components/Hero";
@@ -14,6 +7,7 @@ import { Main } from "../components/Main";
 import { DarkModeSwitch } from "../components/DarkModeSwitch";
 import { CTA } from "../components/CTA";
 import { Footer } from "../components/Footer";
+import { ContactForm } from "../components/ContactForm";
 
 const Index = () => (
   <Container height="100vh">
@@ -42,6 +36,8 @@ const Index = () => (
           </ChakraLink>
         </ListItem>
       </List>
+
+      <ContactForm />
     </Main>
 
     <DarkModeSwitch />

@@ -5,6 +5,12 @@ The goal is to demonstrate how you can use Baloon with a real front-end reposito
 
 We’re using a simple **Next.js + chakra-ui + TypeScript** app as the base project. You can try making changes via Baloon and see how it applies updates across the repo.
 
+## What's inside
+
+- A hero, main content area, and CTA showcasing Baloon’s typical landing page sections
+- A dark-mode-ready UI built with Chakra’s design tokens
+- A responsive “Contact Us” form (BD-60) with basic validation and toast feedback so visitors can reach out
+
 👉 Screenshot and workflow examples will be added soon.
 
 ## Deploy your own

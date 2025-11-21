@@ -7,6 +7,10 @@ We’re using a simple **Next.js + chakra-ui + TypeScript** app as the base proj
 
 👉 Screenshot and workflow examples will be added soon.
 
+## Customizations
+
+- **BD-62:** Landing page hero now showcases the Dubai Tourism winter season with a full-bleed banner, CTAs, and highlight stats tailored for seasonal campaigns.
+
 ## Deploy your own
 
 Deploy this example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-chakra-ui).

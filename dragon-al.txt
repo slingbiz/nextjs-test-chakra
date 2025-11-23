@@ -1,0 +1,2 @@
+This is a lightweight test file requested in BD-65.
+It lives at the project root so automated checks can verify its presence.

@@ -24,6 +24,22 @@ const theme = extendTheme({
         default: "#FF0080",
         _dark: "#fbec8f",
       },
+      dragonNight: {
+        default: "#030712",
+        _dark: "#02040a",
+      },
+      dragonSky: {
+        default: "#67e8f9",
+        _dark: "#7dd3fc",
+      },
+      dragonEmber: {
+        default: "#fb7185",
+        _dark: "#f472b6",
+      },
+      dragonMist: {
+        default: "rgba(255,255,255,0.8)",
+        _dark: "rgba(226,232,240,0.85)",
+      },
     },
     radii: {
       button: "12px",

@@ -7,6 +7,10 @@ We’re using a simple **Next.js + chakra-ui + TypeScript** app as the base proj
 
 👉 Screenshot and workflow examples will be added soon.
 
+## Dragonflight hero banner
+
+The landing page now ships with a cinematic "How to Train Your Dragon"-inspired hero banner. It layers Unsplash photography with radial aurora gradients, CTA choreography, and new semantic color tokens (`dragonNight`, `dragonSky`, `dragonEmber`, `dragonMist`) so you can quickly remix the theme or extend the visual language to other sections.
+
 ## Deploy your own
 
 Deploy this example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-chakra-ui).

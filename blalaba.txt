@@ -1,0 +1,2 @@
+Test artifact for BD-63.
+Used to verify root-level file creation.

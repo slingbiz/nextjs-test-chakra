@@ -5,6 +5,7 @@ import {
   List,
   ListIcon,
   ListItem,
+  Heading,
 } from "@chakra-ui/react";
 import { CheckCircleIcon, LinkIcon } from "@chakra-ui/icons";
 
@@ -19,6 +20,9 @@ const Index = () => (
   <Container height="100vh">
     <Hero />
     <Main>
+      <Heading as="h1" size="2xl" color="text" mb={4}>
+        welcome to 2026
+      </Heading>
       <Text color="text">
         This is a sample demo project in Baloon. You can setup your own project and make changes direclty.{" "}
       </Text>

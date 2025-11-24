@@ -1,0 +1,2 @@
+BD-68 test artifact: dragonefile234542.txt
+This placeholder file exists to satisfy the JIRA requirement.

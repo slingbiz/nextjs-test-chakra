@@ -23,6 +23,8 @@ export const Hero = ({
   subtitle = "Wrap up the year by shipping bold experiments faster than ever.",
 }: HeroProps) => (
   <Flex
+    w="100%"
+    alignSelf="stretch"
     position="relative"
     justifyContent="center"
     alignItems="center"

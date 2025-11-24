@@ -17,12 +17,32 @@ const theme = extendTheme({
         _dark: "#ade3b8",
       },
       heroGradientStart: {
-        default: "#7928CA",
-        _dark: "#e3a7f9",
+        default: "#FDE047",
+        _dark: "#FACC15",
       },
       heroGradientEnd: {
-        default: "#FF0080",
-        _dark: "#fbec8f",
+        default: "#FB7185",
+        _dark: "#FDA4AF",
+      },
+      heroBgStart: {
+        default: "#031123",
+        _dark: "#01070f",
+      },
+      heroBgMid: {
+        default: "#0f3b23",
+        _dark: "#0f5133",
+      },
+      heroBgEnd: {
+        default: "#3c0828",
+        _dark: "#641334",
+      },
+      heroAccent: {
+        default: "#C53030",
+        _dark: "#FEB2B2",
+      },
+      heroSnow: {
+        default: "rgba(255, 255, 255, 0.45)",
+        _dark: "rgba(255, 255, 255, 0.25)",
       },
     },
     radii: {

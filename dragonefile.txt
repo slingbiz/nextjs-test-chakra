@@ -1,0 +1,2 @@
+BD-67 placeholder file for automated tests.
+Keep this file at the repository root unless BD-67 requirements change.

@@ -1,0 +1,2 @@
+This is a placeholder test file required by issue BD-68.
+Do not remove unless the associated requirement is retired.

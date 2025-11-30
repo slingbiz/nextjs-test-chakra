@@ -45,9 +45,7 @@ const Index = () => (
     </Main>
 
     <DarkModeSwitch />
-    <Footer>
-      <Text>Your Code ❤️ Baloon</Text>
-    </Footer>
+    <Footer mt={20} />
     <CTA />
   </Container>
 );

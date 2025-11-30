@@ -16,9 +16,14 @@ import {
 import { IconType } from "react-icons";
 import { FaDiscord, FaGithub, FaTwitter } from "react-icons/fa";
 
+type FooterLink = {
+  label: string;
+  href: string;
+};
+
 type FooterLinkGroup = {
   title: string;
-  links: { label: string; href: string }[];
+  links: FooterLink[];
 };
 
 const linkGroups: FooterLinkGroup[] = [
@@ -54,7 +59,7 @@ const socialLinks: { label: string; href: string; icon: IconType }[] = [
   { label: "Discord", href: "https://discord.gg/baloon", icon: FaDiscord },
 ];
 
-const legalLinks = [
+const legalLinks: FooterLink[] = [
   { label: "Status", href: "https://status.baloon.dev" },
   { label: "Privacy", href: "https://baloon.dev/privacy" },
   { label: "Terms", href: "https://baloon.dev/terms" },

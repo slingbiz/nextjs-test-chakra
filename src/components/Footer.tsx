@@ -1,9 +1,9 @@
 import {
   Box,
+  BoxProps,
   Button,
   Divider,
   Flex,
-  FlexProps,
   HStack,
   IconButton,
   Link,
@@ -60,7 +60,7 @@ const legalLinks = [
   { label: "Terms", href: "https://baloon.dev/terms" },
 ];
 
-export const Footer = (props: FlexProps) => {
+export const Footer = (props: BoxProps) => {
   const bg = useColorModeValue("white", "gray.900");
   const border = useColorModeValue("gray.200", "whiteAlpha.200");
   const textMuted = useColorModeValue("gray.600", "gray.400");

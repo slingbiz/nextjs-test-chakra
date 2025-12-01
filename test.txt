@@ -1,0 +1,3 @@
+BD-74 root-level test file.
+This placeholder ensures automated checks can verify the presence
+of a simple test artifact at the repository root.

@@ -3,7 +3,15 @@
 This repository is a **sample project for [Baloon.dev](https://baloon.dev)**.
 The goal is to demonstrate how you can use Baloon with a real front-end repository to create Jira issues, make relevant code changes, and preview updates seamlessly.
 
-We’re using a simple **Next.js + chakra-ui + TypeScript** app as the base project. You can try making changes via Baloon and see how it applies updates across the repo.
+## Framework
+
+This codebase is a **React application powered by Next.js** with Chakra UI and TypeScript. There is no Angular code here.
+
+Key indicators:
+- `package.json` lists `next`, `react`, and `react-dom` as runtime dependencies, but no Angular packages.
+- The app structure follows Next.js conventions such as `src/pages/_app.tsx` and `src/pages/index.tsx`.
+
+You can try making changes via Baloon and see how it applies updates across the repo.
 
 👉 Screenshot and workflow examples will be added soon.
 

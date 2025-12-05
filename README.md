@@ -7,6 +7,16 @@ We’re using a simple **Next.js + chakra-ui + TypeScript** app as the base proj
 
 👉 Screenshot and workflow examples will be added soon.
 
+## Project Framework
+
+This repository is built with **Next.js**, which is React-based:
+
+- `package.json` lists `next`, `react`, and `react-dom` dependencies, but no Angular packages.
+- The app structure (`src/pages/_app.tsx`, `src/pages/index.tsx`, etc.) follows Next.js routing conventions that Angular does not use.
+- Components such as `Hero.tsx` and `Footer.tsx` are written in JSX/TSX, which is specific to React ecosystems.
+
+Therefore, this is a **React project (Next.js)**, not an Angular app.
+
 ## Deploy your own
 
 Deploy this example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-chakra-ui).

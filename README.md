@@ -5,6 +5,15 @@ The goal is to demonstrate how you can use Baloon with a real front-end reposito
 
 We’re using a simple **Next.js + chakra-ui + TypeScript** app as the base project. You can try making changes via Baloon and see how it applies updates across the repo.
 
+## Framework identification
+
+This codebase is a React project that uses Next.js as the framework. You can confirm this by checking:
+
+- `package.json`, which depends on `react`, `react-dom`, and `next`, and exposes the standard Next.js scripts (`next dev`, `next build`, `next start`).
+- The `src/pages` directory structure (`_app.tsx`, `_document.tsx`, `index.tsx`), which follows the Next.js routing convention.
+
+There is no Angular tooling, configuration, or dependency (e.g., `@angular/*`, `angular.json`) present in the repository.
+
 👉 Screenshot and workflow examples will be added soon.
 
 ## Deploy your own

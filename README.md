@@ -7,6 +7,16 @@ We’re using a simple **Next.js + chakra-ui + TypeScript** app as the base proj
 
 👉 Screenshot and workflow examples will be added soon.
 
+## Tech Stack
+
+- Next.js `latest` for the React application framework and routing
+- React 18 with React DOM for the component model and rendering
+- Chakra UI 2.x (plus Chakra icons) for component primitives and design tokens
+- Emotion 11 for CSS-in-JS styling under Chakra UI
+- Framer Motion 6 for animations and transitions within Chakra components
+- TypeScript 4.7 for static typing and DX
+- Node.js environment (via Vercel, StackBlitz, or local) to run the Next.js toolchain
+
 ## Deploy your own
 
 Deploy this example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-chakra-ui).
